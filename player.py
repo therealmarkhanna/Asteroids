@@ -13,3 +13,7 @@ def triangle(self):
     b = self.position - forward * self.radius - right
     c = self.position - forward * self.radius + right
     return [a, b, c]
+
+def draw(self, screen):
+        # sub-classes must override
+        pygame.draw.polygon(screen, "white", self.triangle(), 2)
