@@ -20,5 +20,5 @@ class Player(CircleShape):
             # sub-classes must override
         pygame.draw.polygon(screen, "white", self.triangle(), 2)
 
-    def rotate():
-        pass
+    def rotate(dt):
+        return PLAYER_TURN_SPEED * dt
